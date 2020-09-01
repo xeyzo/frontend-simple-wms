@@ -1,5 +1,5 @@
 <template>
-<div class="max-w-sm rounded overflow-hidden shadow-lg ml-8">
+<div class="max-w-sm rounded overflow-hidden shadow-lg ml-8 mt-8">
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">Sign In</div>
   </div>
@@ -11,15 +11,14 @@
     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="phone number">
     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="example@mail.com">
-    <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+    <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+        Sign In
+      </button>
+    </div>
     </div>
   </div>
   <div class="flex flex-wrap -mx-3 mb-6">
-  </div>
-  <div class="flex items-center border-b border-teal-500">
-    <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
-      Sign Up
-    </button>
   </div>
 </form>
 </div>

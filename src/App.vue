@@ -7,16 +7,7 @@
           <router-link to="/SignIn" exact>SignIn</router-link>
         </li>
         <li class="mr-6">
-          <router-link to="/" exact>Home</router-link>
-        </li>
-        <li class="mr-6">
-          <router-link to="/post">Post</router-link>
-        </li>
-        <li class="mr-6">
-          <router-link to="/photo">Photo</router-link>
-        </li>
-        <li class="mr-6">
-          <router-link to="/album">Album</router-link>
+          <router-link to="/Login" exact>Login</router-link>
         </li>
       </ul>
     </div>
