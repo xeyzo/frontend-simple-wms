@@ -9,6 +9,9 @@
         <li class="mr-6">
           <router-link to="/Login" exact>Login</router-link>
         </li>
+        <li class="mr-6">
+          <router-link to="/Dashboard" exact>Dashboard</router-link>
+        </li>
       </ul>
     </div>
 
