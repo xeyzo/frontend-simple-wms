@@ -1,12 +1,41 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container mx-auto">
+      <h1>Jumbotron</h1>
+      <ul class="flex nav">
+        <li class="mr-6">
+          <router-link to="/SignIn" exact>SignIn</router-link>
+        </li>
+        <li class="mr-6">
+          <router-link to="/" exact>Home</router-link>
+        </li>
+        <li class="mr-6">
+          <router-link to="/post">Post</router-link>
+        </li>
+        <li class="mr-6">
+          <router-link to="/photo">Photo</router-link>
+        </li>
+        <li class="mr-6">
+          <router-link to="/album">Album</router-link>
+        </li>
+      </ul>
     </div>
-    <router-view />
+
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+    <!-- <hr /> -->
   </div>
 </template>
+
+<script>
+export default {
+  name: "App",
+  components: {
+    // HelloWorld,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -15,18 +44,18 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 60px;
+}
+.nav li a {
+  /* @apply bg-blue-700; */
+  @apply text-blue-500;
+  /* @apply hover:text-blue-800; */
+}
+.nav li a:hover {
+  @apply text-red-800;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.nav li a.router-link-active {
+  @apply text-green-800;
 }
 </style>
